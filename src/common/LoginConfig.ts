@@ -77,6 +77,7 @@ export class LoginConfig {
         try {
             this.federatedToken = await core.getIDToken(this.audience);
             this.mask(this.federatedToken);
+            core.setOutput('federatedToken', this.federatedToken);
         }
         catch (error) {
             core.error(`Please make sure to give write permissions to id-token in the workflow.`);
