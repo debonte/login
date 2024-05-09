@@ -1,5 +1,5 @@
 # Login to Azure subscription
-name: 'Azure Login'
+name: 'Azure login that exposes federated token'
 description: 'Authenticate to Azure and run your Azure CLI or Azure PowerShell based actions or scripts.'
 inputs:
   creds:
